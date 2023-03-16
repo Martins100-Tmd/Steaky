@@ -1,0 +1,11 @@
+#FaceUINews {
+  background-image: url("../Assets/F17.jpg");
+}
+
+#header {
+  background-image: url("../Assets/F21.jpg");
+}
+
+.bgb {
+  background-color: rgba(0, 0, 0, 0.4);
+}
