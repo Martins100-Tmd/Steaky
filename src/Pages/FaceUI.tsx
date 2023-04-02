@@ -6,8 +6,6 @@ import {
   ShoffComponent,
   NewsComponent,
 } from "../Components/Index";
-import { useContext } from "react";
-
 const FaceUIComponent = () => {
   return (
     <div className="w-full">

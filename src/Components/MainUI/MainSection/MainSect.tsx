@@ -1,4 +1,4 @@
-import { Card, F12, F8, FoodCard } from "../../Index";
+import { FoodCard } from "../../Index";
 import { useContext } from "react";
 import CartContext from "../../../Context/Cart";
 import Transform from "../../../Context/Transform";
@@ -12,7 +12,6 @@ const MainSectionComponent = () => {
           className="flex flex-col items-start w-10"
           onClick={() => {
             cart ? setcart(0) : setcart(1);
-            console.log(cart);
           }}
         >
           <div className="w-full h-[2px] bg-black dark:bg-gray-500 font-black"></div>
