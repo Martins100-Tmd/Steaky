@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         pop: ["Poppins"],
         b_serif: ["Bree Serif"],
+        hev: ["Helvetica"],
       },
       width: {
         ninety: ["90%"],

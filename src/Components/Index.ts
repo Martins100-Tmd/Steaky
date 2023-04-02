@@ -8,11 +8,10 @@ export { default as Hero2 } from "./FaceUI/Hero/Hero2";
 
 //Card sections Component
 export { default as Card } from "./FaceUI/Card/Card1";
+export { default as CardII } from "./FaceUI/Card/Card2";
 
 //utils/func
-import bg from "../utils/funcs/background";
-
-export { bg };
+export { default as CartTransform } from "../utils/Cart/cart_transform";
 
 //Assets Images
 import Ham1 from "../Assets/SVG/Ham1.png";
@@ -34,7 +33,9 @@ import F8 from "../Assets/F8.jpg";
 import F18 from "../Assets/F18.jpg";
 import F20 from "../Assets/F20.png";
 import F21 from "../Assets/F21.jpg";
+import F7 from "../Assets/F7.png";
 export {
+  F7,
   F21,
   F8,
   F18,
@@ -55,7 +56,27 @@ export {
   Testimonial3,
   Testimonial2,
 };
-
+export let Images = {
+  F21,
+  F8,
+  F18,
+  F20,
+  Ham1,
+  F13,
+  F12,
+  F11,
+  F4,
+  F16,
+  Hero1,
+  F1,
+  F14,
+  F19,
+  HeroSect1,
+  HeroSect2,
+  Testimonial1,
+  Testimonial3,
+  Testimonial2,
+};
 //SpecialDishCard Component
 export { default as SpecialDishCard } from "./FaceUI/SpecialDish/Card";
 
@@ -69,6 +90,7 @@ import AboutData from "../utils/Data/About";
 
 export { User_Testimony, AboutData };
 
+//==============FaceUI=====================
 //Newsletter Component
 export { default as NewsComponent } from "./FaceUI/Newletter/New";
 
@@ -83,3 +105,14 @@ export { default as ErrorComponent } from "./Error/Error";
 
 //Navbar COmponent
 export { default as AboutComponent } from "../Pages/About";
+
+//==============MainUI===================
+export { default as MainSideBar } from "./MainUI/SideBar/sideBar";
+export { default as MainSection } from "./MainUI/MainSection/MainSect";
+export { default as MainEndBar } from "./MainUI/EndBar/sideBar";
+export { default as BottomBar } from "./MainUI/SideBar/BsideBar";
+//============ MainSection =================
+export { default as FoodCard } from "./MainUI/MainSection/Food_Card";
+
+//=============== CartTransform ===============
+export { default as TransformCart } from "../utils/Cart/cart_transform";

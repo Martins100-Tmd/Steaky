@@ -4,7 +4,7 @@ const NavbarComponent = () => {
   return (
     <>
       <div className="sm:hidden flex flex-col items-center w-full">
-        <p className="text-center font-b_serif text-2xl text-emerald-600 border-b border-slate-200 p-2 w-full">
+        <p className="text-center font-hev text-2xl text-emerald-600 border-b border-slate-200 p-2 w-full">
           St<span className="text-orange-400">ea</span>ky
         </p>
       </div>
@@ -17,7 +17,7 @@ const NavbarComponent = () => {
               className="w-16 h-12 object-cover self-center"
             />
           </div>
-          <p className="font-b_serif font-semibold text-lg text-black -mt-1 uppercase">
+          <p className="font-hev font-semibold text-lg text-black -mt-1 uppercase">
             stea<span className="text-orange-400">ky</span>
           </p>
         </div>
@@ -25,25 +25,25 @@ const NavbarComponent = () => {
           <div className="flex flex-row items-center justify-between self-start w-3/5 -mr-5">
             <Link
               to={"/"}
-              className="list-none font-b_serif text-base text-center font-semibold"
+              className="list-none font-hev text-base text-center font-semibold"
             >
               Home
             </Link>
             <Link to={"/NavAbout"}>
-              <span className="list-none font-b_serif text-base text-center font-semibold">
+              <span className="list-none font-hev text-base text-center font-semibold">
                 About
               </span>
             </Link>
             <Link
               to={"/NavJob"}
-              className="list-none font-b_serif text-base text-center font-semibold"
+              className="list-none font-hev text-base text-center font-semibold"
             >
               Jobs
             </Link>
           </div>
           <Link
             to={"/MENU"}
-            className="rounded-2xl bg-green-400 font-b_serif text-sm px-4 py-1 font-semibold text-white shadow shadow-green-300/100"
+            className="rounded-2xl bg-green-400 font-hev text-sm px-4 py-1 font-semibold text-white shadow shadow-green-300/100"
           >
             Shop Now
           </Link>
@@ -54,17 +54,17 @@ const NavbarComponent = () => {
           &#xf28a;
         </i>
         <Link to={"/"}>
-          <div className="list-none font-b_serif text-lg text-center font-semibold place-self-center">
+          <div className="list-none font-hev text-lg text-center font-semibold place-self-center">
             Home
           </div>
         </Link>
         <Link to={"/NavJob"}>
-          <div className="list-none font-b_serif text-lg text-center font-semibold place-self-center">
+          <div className="list-none font-hev text-lg text-center font-semibold place-self-center">
             Job
           </div>
         </Link>
         <Link to={"/NavAbout"}>
-          <div className="list-none font-b_serif text-lg text-center font-semibold place-self-end">
+          <div className="list-none font-hev text-lg text-center font-semibold place-self-end">
             About
           </div>
         </Link>

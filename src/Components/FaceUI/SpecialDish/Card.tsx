@@ -12,8 +12,8 @@ const SpecialDishCardComponent = ({
           className={"object-cover w-70 mx-auto"}
           alt="specialdishes"
         />
-        <p className="font-b_serif font-semibold text-lg text-center">{name}</p>
-        <p className="text-sm text-center w-ninety mx-auto font-b_serif">
+        <p className="font-hev font-semibold text-lg text-center">{name}</p>
+        <p className="text-sm text-center w-ninety mx-auto font-hev">
           {description}
         </p>
       </div>

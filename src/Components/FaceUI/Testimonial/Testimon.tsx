@@ -7,7 +7,7 @@ const TestimonyComponent = () => {
   return (
     <div className="flex flex-col items-center gap-4 sm:w-1/3  p-3 sm:mt-5 mt-5">
       {/* <div className="w-full rounded shadow bg-green-200 opacity-25 p-3">
-        <p className="text-xl sm:text-left text-center font-pop font-semibold">
+        <p className="text-xl sm:text-left text-center font-hev font-semibold">
           Customers
         </p>
       </div> */}
@@ -19,16 +19,16 @@ const TestimonyComponent = () => {
             className="rounded-full w-16 h-16 border-2 border-teal-500 object-cover mr-2"
           />
           <div className="flex flex-col items-start">
-            <p className="font-pop font-semibold text-start text-lg">
+            <p className="font-hev font-semibold text-start text-lg">
               {User_Testimony[count].name}
             </p>
-            <small className="text-start text-gray-300 font-pop">
+            <small className="text-start text-gray-300 font-hev">
               {User_Testimony[count].job}
             </small>
           </div>
         </div>
         <div className="w-full mt-5 self-start h-full">
-          <p className="font-pop text-base text-left">
+          <p className="font-hev text-base text-left">
             {User_Testimony[count].said}
           </p>
         </div>

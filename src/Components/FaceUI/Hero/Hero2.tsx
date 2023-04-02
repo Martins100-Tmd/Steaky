@@ -3,10 +3,10 @@ const SubHeroComponent = () => {
   return (
     <>
       <div className="flex flex-col items-center text-center mt-3">
-        <h1 className="font-b_serif text-3xl text-center font-semibold">
+        <h1 className="font-hev text-3xl text-center font-semibold">
           Special Dishes
         </h1>
-        <p className="text-sm text-center font-pop mt-1">
+        <p className="text-sm text-center font-hev mt-1">
           Made with our premium ingredients
         </p>
       </div>

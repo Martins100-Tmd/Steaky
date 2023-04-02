@@ -6,19 +6,19 @@ const NewsComponent = () => {
       id="FaceUINews"
     >
       <div className="absolute flex flex-col items-center sm:w-3/4 w-ninety mx-auto sm:top-[30%] top-[17%] sm:left-[12.5%] left-[5%]">
-        <p className="font-pop text-3xl text-center text-white font-semibold mb-3">
+        <p className="font-hev text-3xl text-center text-white font-semibold mb-3">
           Join our members and get a discount up to 50%
         </p>
         <div className="rounded-full w-full p-2 flex flex-row items-center bg-white">
           <input
             type={"text"}
             className={
-              "bg-white p-2 w-3/4 rounded-full outline-none border-none font-pop"
+              "bg-white p-2 w-3/4 rounded-full outline-none border-none font-hev"
             }
           />
           <button
             className={
-              "rounded-3xl w-1/4 text-white bg-green-500 font-semibold font-pop p-2"
+              "rounded-3xl w-1/4 text-white bg-green-500 font-semibold font-hev p-2"
             }
           >
             Submit
