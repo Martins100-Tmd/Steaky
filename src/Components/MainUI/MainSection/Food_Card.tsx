@@ -1,7 +1,7 @@
 import { F12, Card } from "../../Index";
 const FoodCardComponent = () => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-5 grid-cols-2 items-center w-full scroll-m-2">
+    <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:gap-5 gap-3 grid-cols-2 items-center w-full scroll-m-2">
       <Card
         name={""}
         price="$23.00"
