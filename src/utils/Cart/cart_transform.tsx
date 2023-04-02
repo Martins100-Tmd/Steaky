@@ -28,30 +28,6 @@ const CartTransform = ({
         </div>
       </div>
     </div>
-    // <div className="w-full grid grid-cols-3 items-center rounded-3xl p-3">
-    //   <div className="flex justify-start place-content-start">
-    //     <img
-    //       src={src}
-    //       className={"rounded-2xl object-cover w-[90%]"}
-    //       alt={"cart_image"}
-    //     />
-    //   </div>
-    //   <div className="flex flex-col items-start">
-    //     <p className="text-lg font-semibold font-pop text-left">{name}</p>
-    //     <div className="flex flex-row items-center w-full justify-between">
-    //       <input
-    //         type={"text"}
-    //         className={
-    //           "text-sm rounded p-1.5 block w-full shadow outline-none border-none font-pop mr-3"
-    //         }
-    //         placeholder={"How many peices"}
-    //       />
-    //     </div>
-    //   </div>
-    //   <div className="flex justify-end">
-    //     <p className="text-lg font-semibold font-pop">{price}</p>
-    //   </div>
-    // </div>
   );
 };
 
