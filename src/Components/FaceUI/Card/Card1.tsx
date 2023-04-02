@@ -13,14 +13,16 @@ const CardComponent = ({
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
-      rateBox.push(<i className="fa text-xl">&#xf006;</i>);
+      rateBox.push(
+        <i className="material-icons text-2xl text-orange-400">&#xe838;</i>
+      );
     }
     return rateBox;
   };
   return (
     <div
-      className="flex flex-col items-center rounded-2xl shadow p-4 bg-white dark:bg-gray-200 self-stretch relative
-       sm:min-h-[250px] bg-opacity-40 sm:w-auto w-full"
+      className="flex flex-col items-center rounded-xl shadow p-4 bg-white dark:bg-gray-200 self-stretch relative
+       sm:min-h-[200px] bg-opacity-40 sm:w-auto w-full"
       onDoubleClick={() => {
         if (Switch) {
           settransform([
@@ -33,15 +35,16 @@ const CardComponent = ({
             />,
           ]);
         }
-        console.log(transform);
       }}
     >
-      <i className="fa text-3xl self-end place-self-end">&#xf006;</i>
-      <div className="h-[75%] w-[70%] self-center items-end">
+      <span className="fa text-3xl self-end place-self-end" id="span_start">
+        &#xf006;
+      </span>
+      <div className="h-[65%] w-[65%] self-center items-end">
         <img
           src={image}
           alt="cardImage"
-          className="w-full mx-auto object-cover self-center h-full"
+          className="w-5/6 mx-auto object-cover self-center h-full"
         />
       </div>
       <div className="flex flex-col items-center w-full justify-between h-full self-end">
@@ -57,6 +60,27 @@ const CardComponent = ({
           {price}
         </small>
       </div>
+      <button
+        type={"button"}
+        className={
+          "block w-full rounded p-3 font-hev text-lg bg-gray-500 dark:bg-black text-white"
+        }
+        onClick={() => {
+          if (Switch) {
+            settransform([
+              ...transform,
+              <TransformCart
+                image={image}
+                price={price}
+                description={description}
+                rate={rate}
+              />,
+            ]);
+          }
+        }}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
