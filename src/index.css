@@ -11,7 +11,7 @@
 html {
   /* background-color: rgb(248, 248, 248); */
   scroll-behavior: smooth;
-  font-size: smaller;
+  font-size: small;
   height: 100%;
 }
 

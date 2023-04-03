@@ -23,3 +23,17 @@ export type TransformType = {
   transform: ReactNode[];
   settransform: Function;
 };
+// ================ CardObject =====================
+export type CategoryReactNodePairObject = {
+  name: string;
+  Element: ReactNode;
+};
+// ================= Misc context ==========================
+export type MiscObject = {
+  currentCategory: string;
+  favouriteCard: (mole: string) => ReactNode[];
+};
+export type MiscType = {
+  misc: MiscObject;
+  setmisc: Function;
+};

@@ -2,9 +2,12 @@ import { FoodCard } from "../../Index";
 import { useContext } from "react";
 import CartContext from "../../../Context/Cart";
 import Transform from "../../../Context/Transform";
+import MiscContext from "../../../Context/Misc";
+import { MiscObject } from "../../../Type/types";
 const MainSectionComponent = () => {
   let { cart, setcart } = useContext(CartContext);
   let { transform } = useContext(Transform);
+  let { misc, setmisc } = useContext(MiscContext);
   return (
     <div className="flex flex-col items-center w-full sm:mt-6 mt-3">
       <div className="sm:hidden flex flex-row items-center justify-between w-full py-4 sticky top-0 z-50">
@@ -100,11 +103,22 @@ const MainSectionComponent = () => {
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center
           border-b border-green-600"
           id="cat_menu"
+          data-name="All"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">dashboard</i>
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="All">
+            dashboard
+          </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
+            data-name="All"
           >
             All
           </p>
@@ -112,11 +126,22 @@ const MainSectionComponent = () => {
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center"
           id="cat_menu"
+          data-name="NearBy"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">room</i>
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="NearBy">
+            room
+          </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
+            data-name="NearBy"
           >
             NearBy
           </p>
@@ -125,11 +150,25 @@ const MainSectionComponent = () => {
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center "
           id="cat_menu"
+          data-name="BestSellers"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">dashboard</i>
+          <i
+            className="text-2xl material-icons mr-2 -mt-1"
+            data-name="BestSellers"
+          >
+            dashboard
+          </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
+            data-name="BestSeller"
           >
             Best Sellers
           </p>
@@ -137,11 +176,25 @@ const MainSectionComponent = () => {
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center"
           id="cat_menu"
+          data-name="TopRated"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">star_rate</i>
+          <i
+            className="text-2xl material-icons mr-2 -mt-1"
+            data-name="TopRated"
+          >
+            star_rate
+          </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
+            data-name="TopRated"
           >
             Top Rated
           </p>
@@ -149,11 +202,25 @@ const MainSectionComponent = () => {
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center "
           id="cat_menu"
+          data-name="Favourite"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">star_rate</i>
+          <i
+            className="text-2xl material-icons mr-2 -mt-1"
+            data-name="Favourite"
+          >
+            star_rate
+          </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
+            data-name="Favourite"
           >
             Favourite
           </p>
@@ -162,11 +229,25 @@ const MainSectionComponent = () => {
           className="flex flex-row sm:items-center items-start p-3 cursor-pointer sm:shadow-none justify-center
            sm:roundedw-auto -none shadow rounded"
           id="cat_menu"
+          data-name="Promotion"
+          onClick={(e) => {
+            let target = e.target as HTMLDivElement;
+            setmisc((prev: MiscObject) => ({
+              ...prev,
+              currentCategory: target.dataset.name,
+            }));
+          }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1">toll</i>
+          <i
+            className="text-2xl material-icons mr-2 -mt-1"
+            data-name="Promotion"
+          >
+            toll
+          </i>
           <p
             className="text-xl font-semibold
            font-hev sm:text-center text-left"
+            data-name="Promotion"
           >
             Promotions
           </p>

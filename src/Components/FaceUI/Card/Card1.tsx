@@ -1,7 +1,9 @@
-import { card_item } from "../../../Type/types";
+import { card_item, MiscType, MiscObject } from "../../../Type/types";
 import Transform from "../../../Context/Transform";
 import { useContext } from "react";
 import { TransformCart } from "../../Index";
+import MiscContext from "../../../Context/Misc";
+import { Card } from "../../Index";
 const CardComponent = ({
   price,
   description,
@@ -10,11 +12,14 @@ const CardComponent = ({
   Switch,
 }: card_item) => {
   let { transform, settransform } = useContext(Transform);
+  let { misc, setmisc } = useContext<MiscType>(MiscContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
       rateBox.push(
-        <i className="material-icons text-2xl text-orange-400">&#xe838;</i>
+        <i className="material-icons text-2xl text-orange-400" key={i}>
+          &#xe838;
+        </i>
       );
     }
     return rateBox;
@@ -23,21 +28,12 @@ const CardComponent = ({
     <div
       className="flex flex-col items-center rounded-xl shadow p-4 bg-white dark:bg-gray-200 self-stretch relative
        sm:min-h-[200px] bg-opacity-40 sm:w-auto w-full"
-      onDoubleClick={() => {
-        if (Switch) {
-          settransform([
-            ...transform,
-            <TransformCart
-              image={image}
-              price={price}
-              description={description}
-              rate={rate}
-            />,
-          ]);
-        }
-      }}
     >
-      <span className="fa text-3xl self-end place-self-end" id="span_start">
+      <span
+        className="fa text-3xl self-end place-self-end"
+        id="span_start"
+        onClick={(e) => {}}
+      >
         &#xf006;
       </span>
       <div className="h-[65%] w-[65%] self-center items-end">

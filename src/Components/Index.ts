@@ -34,9 +34,11 @@ import F18 from "../Assets/F18.jpg";
 import F20 from "../Assets/F20.png";
 import F21 from "../Assets/F21.jpg";
 import F7 from "../Assets/F7.png";
+import emptyBag from "../Assets/emptyBag.png";
 export {
   F7,
   F21,
+  emptyBag,
   F8,
   F18,
   F20,
@@ -116,3 +118,6 @@ export { default as FoodCard } from "./MainUI/MainSection/Food_Card";
 
 //=============== CartTransform ===============
 export { default as TransformCart } from "../utils/Cart/cart_transform";
+
+// ================= Card Object =======================
+export { default as CardObject } from "./MainUI/MainSection/Card_group";
