@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Transform from "../../../Context/Transform";
+import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
 const BSideBarComponent = () => {
-  let { transform } = useContext(Transform);
+  let { Cart } = useContext(CartContext);
   return (
     <div
       className={`flex flex-row justify-between items-center w-full shadow-xl bg-white dark:bg-gray-200 py-5 px-3 duration-500
@@ -15,7 +15,7 @@ const BSideBarComponent = () => {
       </div>
       <div className="relative flex flex-col">
         <p className="text-lg font-pop absolute bottom-4 left-4">
-          {transform.length}
+          {Cart.CartArray.length}
         </p>
         <Link to={"/CART"} className="flex justify-center text-3xl fa relative">
           &#xf07a;

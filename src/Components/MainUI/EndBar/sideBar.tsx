@@ -1,27 +1,12 @@
-import Transform from "../../../Context/Transform";
+import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
+import { CartObjectType } from "../../../Type/types";
 const SideBarComponent = () => {
-  let { transform, settransform } = useContext(Transform);
-  let List = transform.map((item, index) => {
+  let { Cart, setCart } = useContext(CartContext);
+  let List = Cart.CartArray.map((item, index) => {
     return (
-      <div key={index} className={"flex flex-col items-start relative my-3"}>
-        <div
-          className="absolute w-4 h-3 left-4 right-0 cursor-pointer"
-          onClick={() => {
-            let NewTransform = transform.filter((item: any) => {
-              return transform.indexOf(item) !== index;
-            });
-            settransform(NewTransform);
-          }}
-        >
-          <div
-            className={`w-[2px] bg-red-500 bg-opacity-60 rounded-full min-h-[15px] rotate-45 absolute`}
-          ></div>
-          <div
-            className={`w-[2px] bg-red-500 bg-opacity-60 rounded-full min-h-[15px] -rotate-45 absolute`}
-          ></div>
-        </div>
-        {item}
+      <div key={index} className={"flex flex-col items-start relative my-1"}>
+        {item.Element}
       </div>
     );
   });
@@ -49,7 +34,28 @@ const SideBarComponent = () => {
         </div>
       </div>
       <div className="h-[1px] bg-gray-400 w-full my-5"></div>
-      <div className="h-[40%] overflow-y-scroll w-full grid grid-cols-1 py-3">
+      <div className="flex flex-row items-center w-full justify-between">
+        <p className="text-gray-500 font-hev text-xl w-1/2 border-b border-gray-500">
+          Cart Items
+        </p>
+        <i
+          className="fa text-gray-500 flex justify-end text-xl w-1/2"
+          onClick={() => {
+            Cart.CardDeleteSwitch || Cart.CartArray.length == 0
+              ? setCart((prev: CartObjectType) => ({
+                  ...prev,
+                  CardDeleteSwitch: 0,
+                }))
+              : setCart((prev: CartObjectType) => ({
+                  ...prev,
+                  CardDeleteSwitch: 1,
+                }));
+          }}
+        >
+          &#xf014;
+        </i>
+      </div>
+      <div className="h-[40%] overflow-y-scroll w-full grid sm:grid-cols-3 sm:gap-2 grid-cols-1">
         {List}
       </div>
       <div className="h-[1px] bg-gray-400 w-full my-5"></div>

@@ -5,9 +5,9 @@ import {
   MainSideBar,
 } from "../Components/Index";
 import { useContext } from "react";
-import CartContext from "../Context/Cart";
+import CartContext from "../Context/cartContext";
 const MainUIComponent = () => {
-  let { cart } = useContext(CartContext);
+  let { Cart } = useContext(CartContext);
   return (
     <div className="h-screen">
       <div className="flex flex-row items-stretch w-full h-full">
@@ -23,9 +23,9 @@ const MainUIComponent = () => {
       </div>
       <div
         className={
-          cart
+          Cart.CartSideBar
             ? "sm:hidden flex w-full h-[7%] bottom-0 fixed duration-700"
-            : "-bottom-full duration-700"
+            : "-bottom-full duration-700 sm:hidden flex"
         }
       >
         <BottomBar />

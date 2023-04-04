@@ -13,16 +13,24 @@ export type specialDishes_item = {
   description: string;
   image: string;
 };
-//========= Cart I ===========
-export type Cart = {
-  cart: number;
-  setcart: Function;
+
+// ============ Cart-Context-Types===========
+export type CartItemsObj = {
+  index: number;
+  Element: ReactNode;
 };
-// ============ Cart II ===========
-export type TransformType = {
-  transform: ReactNode[];
-  settransform: Function;
+
+export type CartObjectType = {
+  CartArray: CartItemsObj[];
+  CartSideBar: number;
+  CardDeleteSwitch: number;
 };
+export type CartContextType = {
+  Cart: CartObjectType;
+  setCart: Function;
+  AssignID: () => string;
+};
+
 // ================ CardObject =====================
 export type CategoryReactNodePairObject = {
   name: string;

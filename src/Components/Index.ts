@@ -11,7 +11,7 @@ export { default as Card } from "./FaceUI/Card/Card1";
 export { default as CardII } from "./FaceUI/Card/Card2";
 
 //utils/func
-export { default as CartTransform } from "../utils/Cart/cart_transform";
+export { default as CardToCart } from "../utils/Cart/cardTocart";
 
 //Assets Images
 import Ham1 from "../Assets/SVG/Ham1.png";
@@ -117,7 +117,7 @@ export { default as BottomBar } from "./MainUI/SideBar/BsideBar";
 export { default as FoodCard } from "./MainUI/MainSection/Food_Card";
 
 //=============== CartTransform ===============
-export { default as TransformCart } from "../utils/Cart/cart_transform";
+export { default as TransformCart } from "../utils/Cart/cardTocart";
 
 // ================= Card Object =======================
 export { default as CardObject } from "./MainUI/MainSection/Card_group";

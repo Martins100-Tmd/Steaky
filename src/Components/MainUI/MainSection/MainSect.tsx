@@ -1,12 +1,10 @@
 import { FoodCard } from "../../Index";
 import { useContext } from "react";
-import CartContext from "../../../Context/Cart";
-import Transform from "../../../Context/Transform";
+import CartContext from "../../../Context/cartContext";
 import MiscContext from "../../../Context/Misc";
-import { MiscObject } from "../../../Type/types";
+import { MiscObject, CartObjectType } from "../../../Type/types";
 const MainSectionComponent = () => {
-  let { cart, setcart } = useContext(CartContext);
-  let { transform } = useContext(Transform);
+  let { Cart, setCart } = useContext(CartContext);
   let { misc, setmisc } = useContext(MiscContext);
   return (
     <div className="flex flex-col items-center w-full sm:mt-6 mt-3">
@@ -14,7 +12,12 @@ const MainSectionComponent = () => {
         <div
           className="flex flex-col items-start w-10"
           onClick={() => {
-            cart ? setcart(0) : setcart(1);
+            Cart.CartSideBar
+              ? setCart((prev: CartObjectType) => ({ ...prev, CartSideBar: 0 }))
+              : setCart((prev: CartObjectType) => ({
+                  ...prev,
+                  CartSideBar: 1,
+                }));
           }}
         >
           <div className="w-full h-[2px] bg-black dark:bg-gray-500 font-black"></div>
@@ -23,7 +26,7 @@ const MainSectionComponent = () => {
         </div>
         <div className="flex flex-row items-center">
           <p className="text-lg font-black self-end place-self-end font-hev">
-            {transform.length}
+            {Cart.CartArray.length}
           </p>
           <i className="flex jusify-center text-4xl fa -mt-2 dark:text-gray-500">
             &#xf07a;
@@ -34,9 +37,7 @@ const MainSectionComponent = () => {
         <i
           className="fa text-3xl self-start text-gray-500"
           onClick={() => {
-            const INPUT = document.getElementById(
-              "inp-mt-2"
-            ) as HTMLInputElement;
+            const INPUT = document.getElementById("inp") as HTMLInputElement;
             INPUT.focus();
           }}
         >

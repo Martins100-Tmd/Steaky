@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Transform from "../../../Context/Transform";
+import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
 const SideBarComponent = () => {
-  let { transform } = useContext(Transform);
+  let { Cart } = useContext(CartContext);
   return (
     <div
       className={`flex sm:flex-col flex-row items-center w-full shadow-xl dark:bg-gray-200
@@ -19,7 +19,7 @@ const SideBarComponent = () => {
       >
         <div className="relative">
           <p className="text-lg font-pop absolute bottom-6 right-1">
-            {transform.length}
+            {Cart.CartArray.length}
           </p>
           <Link to={"/CART"} className="flex justify-center text-3xl fa">
             &#xf07a;

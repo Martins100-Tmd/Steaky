@@ -1,9 +1,8 @@
-import { card_item, MiscType, MiscObject } from "../../../Type/types";
-import Transform from "../../../Context/Transform";
+import { card_item, CartObjectType } from "../../../Type/types";
+import Transform from "../../../Context/cartContext";
 import { useContext } from "react";
 import { TransformCart } from "../../Index";
-import MiscContext from "../../../Context/Misc";
-import { Card } from "../../Index";
+import CartContext from "../../../Context/cartContext";
 const CardComponent = ({
   price,
   description,
@@ -11,8 +10,7 @@ const CardComponent = ({
   image,
   Switch,
 }: card_item) => {
-  let { transform, settransform } = useContext(Transform);
-  let { misc, setmisc } = useContext<MiscType>(MiscContext);
+  let { Cart, setCart, AssignID } = useContext(CartContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
@@ -63,15 +61,26 @@ const CardComponent = ({
         }
         onClick={() => {
           if (Switch) {
-            settransform([
-              ...transform,
-              <TransformCart
-                image={image}
-                price={price}
-                description={description}
-                rate={rate}
-              />,
-            ]);
+            let AddCartArray = [
+              ...Cart.CartArray,
+              {
+                index: AssignID(),
+                Element: (
+                  <TransformCart
+                    id={AssignID()}
+                    image={image}
+                    price={price}
+                    description={description}
+                    rate={rate}
+                  />
+                ),
+              },
+            ];
+            console.log(AddCartArray);
+            setCart((prev: CartObjectType) => ({
+              ...prev,
+              CartArray: AddCartArray,
+            }));
           }
         }}
       >
