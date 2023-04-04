@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CartContext from "../../Context/cartContext";
 import { useContext } from "react";
-import { CartObjectType } from "../../Type/types";
+import { CartObjectType, CartItemsObj } from "../../Type/types";
 const CardToCardComponent = ({
   image,
   description,
@@ -68,12 +68,12 @@ const CardToCardComponent = ({
             : "hidden"
         }
         onClick={() => {
-          console.log(Cart.CartArray);
-          let NewCartArray = Cart.CartArray.filter((item: any) => {
-            console.log(id, item.Element.props.id);
-            return item.Element.props.id !== id;
+          let NewCartArray: CartItemsObj[] = [];
+          Cart.CartArray.forEach((item: any) => {
+            if (item.Element.props.id !== id) {
+              NewCartArray.push(item);
+            }
           });
-          console.log(NewCartArray);
           setCart((prev: CartObjectType) => ({
             ...prev,
             CartArray: NewCartArray,
