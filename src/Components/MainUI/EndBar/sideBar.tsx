@@ -2,7 +2,7 @@ import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
 import { CartObjectType } from "../../../Type/types";
 const SideBarComponent = () => {
-  let { Cart, setCart } = useContext(CartContext);
+  let { Cart, setCart, PriceAccumulator } = useContext(CartContext);
   let List = Cart.CartArray.map((item, index) => {
     return (
       <div key={index} className={"flex flex-col items-start relative my-1"}>
@@ -64,13 +64,17 @@ const SideBarComponent = () => {
           <p className="text-base text-gray-500 text-left font-hev">
             Sub Total
           </p>
-          <p className="font-hev font-semibold text-lg">$340</p>
+          <p className="font-hev font-semibold text-lg">
+            {PriceAccumulator(null, null)[0]}
+          </p>
         </div>
         <div className="flex flex-row items-center w-full justify-between mt-5">
           <p className="text-base text-gray-500 text-left font-hev">
             Delivery Fee
           </p>
-          <p className="font-hev font-semibold text-lg">$9</p>
+          <p className="font-hev font-semibold text-lg">
+            {PriceAccumulator(null, null)[1]}
+          </p>
         </div>
         <div className="flex flex-row items-center border-2 border-orange-600 rounded-lg w-full p-4 justify-between bg-orange-100 mt-6">
           <p className="text-lg font-hev text-left">Find promotions</p>
@@ -84,7 +88,9 @@ const SideBarComponent = () => {
       <div className="flex flex-col items-center w-full mt-5">
         <div className="flex flex-row items-center w-full justify-between">
           <p className="text-base font-hev text-gray-500 text-left">Total</p>
-          <p className="font-hev font-semibold text-lg">$349</p>
+          <p className="font-hev font-semibold text-lg">
+            {PriceAccumulator(null, null)[2]}
+          </p>
         </div>
         <button className="bg-orange-600 px-6 p-5 rounded block w-full">
           <p className="font-hev text-lg text-white">Check Out</p>

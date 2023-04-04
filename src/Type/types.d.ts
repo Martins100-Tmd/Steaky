@@ -15,9 +15,15 @@ export type specialDishes_item = {
 };
 
 // ============ Cart-Context-Types===========
+type CartItemsObjProps = {
+  props: {
+    id: string;
+    price: string;
+  };
+};
 export type CartItemsObj = {
   index: number;
-  Element: ReactNode;
+  Element: ReactNode<CartItemsObjProps>;
 };
 
 export type CartObjectType = {
@@ -29,6 +35,7 @@ export type CartContextType = {
   Cart: CartObjectType;
   setCart: Function;
   AssignID: () => string;
+  PriceAccumulator: (mole: string | null, flag: number | null) => string[];
 };
 
 // ================ CardObject =====================

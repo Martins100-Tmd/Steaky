@@ -5,7 +5,6 @@ import { CartObjectType, CartItemsObj } from "../../Type/types";
 const CardToCardComponent = ({
   image,
   description,
-  rate,
   price,
   id,
 }: {
@@ -16,7 +15,7 @@ const CardToCardComponent = ({
   id: string;
 }) => {
   let [count, setcount] = useState(1);
-  let { Cart, setCart } = useContext(CartContext);
+  let { Cart, setCart, PriceAccumulator } = useContext(CartContext);
   return (
     <>
       <div
@@ -46,6 +45,7 @@ const CardToCardComponent = ({
             className="fa text-2xl font-thin text-gray-400 cursor-pointer"
             onClick={() => {
               count === 1 ? setcount(count) : setcount(count - 1);
+              PriceAccumulator(price, 0);
             }}
           >
             &#xf056;
@@ -55,6 +55,7 @@ const CardToCardComponent = ({
             className="fa text-2xl font-thin text-gray-400 cursor-pointer"
             onClick={() => {
               setcount(count + 1);
+              PriceAccumulator(price, 1);
             }}
           >
             &#xf055;
