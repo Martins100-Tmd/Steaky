@@ -76,7 +76,6 @@ const CardComponent = ({
                 ),
               },
             ];
-            console.log(AddCartArray);
             setCart((prev: CartObjectType) => ({
               ...prev,
               CartArray: AddCartArray,

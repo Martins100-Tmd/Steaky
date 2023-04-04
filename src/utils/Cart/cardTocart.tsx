@@ -19,7 +19,13 @@ const CardToCardComponent = ({
   let { Cart, setCart } = useContext(CartContext);
   return (
     <>
-      <div className="flex flex-row rounded-t-md w-full items-start bg-white justify-between shadow bg-opacity-70 p-2">
+      <div
+        className={
+          Cart.CardDeleteSwitch
+            ? "flex flex-row rounded-t-md w-full items-start bg-white justify-between shadow bg-opacity-70 p-2"
+            : "flex flex-row rounded-md w-full items-start bg-white justify-between shadow bg-opacity-70 p-2"
+        }
+      >
         <div className="flex flex-row items-center w-[70%] justify-between">
           <img
             src={image}
@@ -62,9 +68,12 @@ const CardToCardComponent = ({
             : "hidden"
         }
         onClick={() => {
+          console.log(Cart.CartArray);
           let NewCartArray = Cart.CartArray.filter((item: any) => {
+            console.log(id, item.Element.props.id);
             return item.Element.props.id !== id;
           });
+          console.log(NewCartArray);
           setCart((prev: CartObjectType) => ({
             ...prev,
             CartArray: NewCartArray,

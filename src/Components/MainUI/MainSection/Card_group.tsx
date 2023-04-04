@@ -1,5 +1,5 @@
 import { CategoryReactNodePairObject } from "../../../Type/types";
-import { Card, F12, F7, F11 } from "../../Index";
+import { Card, F12, F7, F11, F14, F13 } from "../../Index";
 const CardObject: CategoryReactNodePairObject[] = [
   {
     name: "All",
@@ -10,7 +10,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -23,7 +23,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -36,7 +36,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -49,7 +49,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -62,7 +62,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -75,7 +75,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -88,7 +88,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -101,7 +101,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -114,7 +114,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -127,7 +127,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -140,7 +140,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -153,7 +153,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F12}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - All"}
+        description={"Keeto Tomatoes Pizza"}
       />
     ),
   },
@@ -166,7 +166,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -179,7 +179,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -192,7 +192,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -205,7 +205,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -218,7 +218,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -231,7 +231,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -244,7 +244,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -257,7 +257,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -270,7 +270,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -283,7 +283,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -296,7 +296,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -309,7 +309,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -322,7 +322,7 @@ const CardObject: CategoryReactNodePairObject[] = [
         image={F7}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - NearBy"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -332,10 +332,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -345,10 +345,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -358,10 +358,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -371,10 +371,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -384,10 +384,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -397,10 +397,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -410,10 +410,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -423,10 +423,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -436,10 +436,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -449,10 +449,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -462,10 +462,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -475,10 +475,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -488,10 +488,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F14}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - TopRated"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -501,10 +501,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -514,10 +514,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -527,10 +527,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -540,10 +540,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -553,10 +553,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -566,10 +566,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -579,10 +579,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -592,10 +592,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -605,10 +605,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -618,10 +618,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -631,10 +631,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -644,10 +644,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -657,10 +657,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F11}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - BestSeller"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -670,10 +670,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -683,10 +683,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -696,10 +696,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -709,10 +709,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -722,10 +722,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -735,10 +735,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -748,10 +748,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -761,10 +761,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -774,10 +774,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -787,10 +787,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -800,10 +800,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -813,10 +813,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
@@ -826,10 +826,10 @@ const CardObject: CategoryReactNodePairObject[] = [
       <Card
         name={""}
         price="$23.00"
-        image={F12}
+        image={F13}
         rate={"4.8"}
         Switch={1}
-        description={"Keeto Tomatoes Pizza - Promotion"}
+        description={"Keeto Tomatoes Pizzaa"}
       />
     ),
   },
