@@ -30,7 +30,7 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
     } else if (mole === null && flag === null) {
       AllPrices = [...AllPrices];
     }
-    console.log(AllPrices);
+    console.log(All);
     All = AllPrices.map((item: any) => {
       return item.split("").filter((x: any) => {
         return x !== "$" && x !== "0" && x !== ".";
