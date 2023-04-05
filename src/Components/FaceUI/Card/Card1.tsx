@@ -1,6 +1,6 @@
 import { card_item, CartObjectType } from "../../../Type/types";
 import Transform from "../../../Context/cartContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { TransformCart } from "../../Index";
 import CartContext from "../../../Context/cartContext";
 const CardComponent = ({
@@ -61,8 +61,7 @@ const CardComponent = ({
         }
         onClick={() => {
           if (Switch) {
-            let AddCartArray = [
-              ...Cart.CartArray,
+            let AddCartArray = [...Cart.CartArray].concat([
               {
                 index: AssignID(),
                 Element: (
@@ -75,7 +74,7 @@ const CardComponent = ({
                   />
                 ),
               },
-            ];
+            ]);
             setCart((prev: CartObjectType) => ({
               ...prev,
               CartArray: AddCartArray,

@@ -22,7 +22,7 @@ type CartItemsObjProps = {
   };
 };
 export type CartItemsObj = {
-  index: number;
+  index: string;
   Element: ReactNode<CartItemsObjProps>;
 };
 
