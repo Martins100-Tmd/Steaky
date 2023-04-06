@@ -35,7 +35,17 @@ import F20 from "../Assets/F20.png";
 import F21 from "../Assets/F21.jpg";
 import F7 from "../Assets/F7.png";
 import emptyBag from "../Assets/emptyBag.png";
+import ham1 from "../Assets/ham1.jpg";
+import ham2 from "../Assets/ham2.jpg";
+import ham3 from "../Assets/ham3.png";
+import ham4 from "../Assets/ham4.jpg";
+import ham5 from "../Assets/ham5.jpg";
 export {
+  ham1,
+  ham2,
+  ham3,
+  ham4,
+  ham5,
   F7,
   F21,
   emptyBag,
@@ -121,3 +131,6 @@ export { default as TransformCart } from "../utils/Cart/cardTocart";
 
 // ================= Card Object =======================
 export { default as CardObject } from "./MainUI/MainSection/Card_group";
+
+//=========== Misc Component ================
+export { default as remove } from "./Misc/removeIcon";

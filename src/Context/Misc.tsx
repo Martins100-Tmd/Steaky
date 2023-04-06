@@ -7,9 +7,10 @@ export const MiscContextProvider = ({ children }: { children: ReactNode }) => {
   let [misc, setmisc] = useState<MiscObject>({
     currentCategory: "All",
     favouriteCard: (mole: string = "All") => {
+      console.log(mole);
       let CardItems: ReactNode[];
       CardItems = CardObject.map((item) => {
-        if (item.name === mole) {
+        if (item.Category === mole) {
           return item.Element;
         }
       }).filter((x) => x !== undefined);

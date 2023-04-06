@@ -6,11 +6,12 @@ import CartContext from "../../../Context/cartContext";
 const CardComponent = ({
   price,
   description,
+  name,
   rate,
   image,
   Switch,
 }: card_item) => {
-  let { Cart, setCart, AssignID } = useContext(CartContext);
+  let { Cart, setCart } = useContext(CartContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
@@ -51,7 +52,7 @@ const CardComponent = ({
           })}
         </div>
         <small className="text-base text-black text-center font-hev font-semibold">
-          {price}
+          ${price}
         </small>
       </div>
       <button
@@ -59,14 +60,17 @@ const CardComponent = ({
         className={
           "block w-full rounded p-3 font-hev text-lg bg-gray-500 dark:bg-black text-white"
         }
-        onClick={() => {
+        onClick={(e) => {
           if (Switch) {
             let AddCartArray = [...Cart.CartArray].concat([
               {
-                index: AssignID(),
+                index: Cart.CartItemID,
+                ignore: false,
                 Element: (
                   <TransformCart
-                    id={AssignID()}
+                    name={name}
+                    Switch={0}
+                    id={Cart.CartItemID}
                     image={image}
                     price={price}
                     description={description}

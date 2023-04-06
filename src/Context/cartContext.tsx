@@ -1,4 +1,10 @@
-import { createContext, useState, ReactNode } from "react";
+import {
+  createContext,
+  useState,
+  ReactNode,
+  useCallback,
+  useEffect,
+} from "react";
 import { CartContextType, CartObjectType, CartItemsObj } from "../Type/types";
 
 const CartContext = createContext<CartContextType>(undefined as any);
@@ -8,20 +14,32 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
     CartArray: [],
     CartSideBar: 0,
     CardDeleteSwitch: 0,
+    CartMultipleItems: [],
+    CartSubTotal: 0,
+    CartTotal: 0,
+    CartItemID: `${Math.floor(Math.random() * 3333334)}`,
+    CartTrigger: 0,
+    CartDuplicate: {},
   });
-  const AssignID = () => {
-    return `${Math.floor(Math.random() * 3333334)}`;
-  };
-  const PriceAccumulator = (mole: string | null, flag: number | null) => {
-    let AllPrices: any, All, Total, DeliveryFee;
-    /**
-     * mole(string): To add a new price if a foodCard quantity increases
-     * flag(number): flag to detect add or remove price
-     */
-    return AllPrices;
-  };
+  useEffect(() => {
+    let DeliveryFee, Total: number;
+    let total = 0;
+    Cart.CartArray.forEach((item) => {
+      if (item.Element.props.price) {
+        total += item.Element.props.price;
+      }
+    });
+    DeliveryFee = Math.round(total * 0.24);
+    Total = total + DeliveryFee;
+    setCart((prev: CartObjectType) => ({
+      ...prev,
+      CartTotal: Total,
+      CartSubTotal: total,
+      CartTrigger: 0,
+    }));
+  }, [Cart.CartTrigger]);
   return (
-    <CartContext.Provider value={{ Cart, setCart, AssignID, PriceAccumulator }}>
+    <CartContext.Provider value={{ Cart, setCart }}>
       {children}
     </CartContext.Provider>
   );

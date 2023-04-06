@@ -1,12 +1,25 @@
 import { CategoryReactNodePairObject } from "../../../Type/types";
-import { Card, F12, F7, F11, F14, F13 } from "../../Index";
+import {
+  Card,
+  F12,
+  F7,
+  F11,
+  F14,
+  F13,
+  ham1,
+  ham2,
+  ham3,
+  ham4,
+  ham5,
+} from "../../Index";
 const CardObject: CategoryReactNodePairObject[] = [
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -15,11 +28,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -28,11 +42,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -41,11 +56,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -54,11 +70,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -67,11 +84,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -80,11 +98,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -93,11 +112,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -106,11 +126,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -119,11 +140,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -132,11 +154,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -145,11 +168,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "All",
+    Category: "All",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Mixed Foods"}
+        id={""}
+        price={23.0}
         image={F12}
         rate={"4.8"}
         Switch={1}
@@ -158,12 +182,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham1}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -171,12 +196,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham2}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -184,12 +210,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham3}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -197,12 +224,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham4}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -210,12 +238,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham5}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -223,12 +252,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham1}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -236,12 +266,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham4}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -249,12 +280,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham3}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -262,12 +294,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham2}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -275,12 +308,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham5}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -288,12 +322,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham3}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -301,12 +336,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham5}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -314,12 +350,13 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "NearBy",
+    Category: "Pizzas",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
-        image={F7}
+        name={"Pizzas"}
+        id={""}
+        price={23.0}
+        image={ham2}
         rate={"4.8"}
         Switch={1}
         description={"Keeto Tomatoes Pizzaa"}
@@ -327,11 +364,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -340,11 +378,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -353,11 +392,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -366,11 +406,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -379,11 +420,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -392,11 +434,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -405,11 +448,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -418,11 +462,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -431,11 +476,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -444,11 +490,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -457,11 +504,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -470,11 +518,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -483,11 +532,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "TopRated",
+    Category: "Hamburgers",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Hamburgers"}
+        id={""}
+        price={23.0}
         image={F14}
         rate={"4.8"}
         Switch={1}
@@ -496,11 +546,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -509,11 +560,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -522,11 +574,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -535,11 +588,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -548,11 +602,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -561,11 +616,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -574,11 +630,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -587,11 +644,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -600,11 +658,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -613,11 +672,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -626,11 +686,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -639,11 +700,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -652,11 +714,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "BestSeller",
+    Category: "Salads",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Salads"}
+        id={""}
+        price={23.0}
         image={F11}
         rate={"4.8"}
         Switch={1}
@@ -665,11 +728,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -678,11 +742,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -691,11 +756,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -704,11 +770,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -717,11 +784,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -730,11 +798,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -743,11 +812,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -756,11 +826,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -769,11 +840,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -782,11 +854,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -795,11 +868,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -808,11 +882,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}
@@ -821,11 +896,12 @@ const CardObject: CategoryReactNodePairObject[] = [
     ),
   },
   {
-    name: "Promotion",
+    Category: "Meats",
     Element: (
       <Card
-        name={""}
-        price="$23.00"
+        name={"Meats"}
+        id={""}
+        price={23.0}
         image={F13}
         rate={"4.8"}
         Switch={1}

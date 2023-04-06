@@ -13,10 +13,15 @@ const MainSectionComponent = () => {
           className="flex flex-col items-start w-10"
           onClick={() => {
             Cart.CartSideBar
-              ? setCart((prev: CartObjectType) => ({ ...prev, CartSideBar: 0 }))
+              ? setCart((prev: CartObjectType) => ({
+                  ...prev,
+                  CartSideBar: 0,
+                  CartTrigger: 1,
+                }))
               : setCart((prev: CartObjectType) => ({
                   ...prev,
                   CartSideBar: 1,
+                  CartTrigger: 1,
                 }));
           }}
         >
@@ -77,7 +82,7 @@ const MainSectionComponent = () => {
         </div>
       </div>
       <div
-        className="grid sm:grid-cols-6 grid-cols-3 items-stretch w-full sm:mt-5 my-4 space-x-3 space-y-3"
+        className="grid sm:grid-cols-5 grid-cols-3 items-stretch w-full sm:mt-5 my-4 space-x-3 space-y-3"
         onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
           let target = e.target as HTMLDivElement;
           let realTarget =
@@ -127,7 +132,7 @@ const MainSectionComponent = () => {
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center"
           id="cat_menu"
-          data-name="NearBy"
+          data-name="Pizzas"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
             setmisc((prev: MiscObject) => ({
@@ -136,22 +141,22 @@ const MainSectionComponent = () => {
             }));
           }}
         >
-          <i className="text-2xl material-icons mr-2 -mt-1" data-name="NearBy">
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="Pizzas">
             room
           </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
-            data-name="NearBy"
+            data-name="Pizzas"
           >
-            NearBy
+            Pizzas
           </p>
         </div>
 
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center "
           id="cat_menu"
-          data-name="BestSellers"
+          data-name="Salads"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
             setmisc((prev: MiscObject) => ({
@@ -160,10 +165,7 @@ const MainSectionComponent = () => {
             }));
           }}
         >
-          <i
-            className="text-2xl material-icons mr-2 -mt-1"
-            data-name="BestSellers"
-          >
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="Salads">
             dashboard
           </i>
           <p
@@ -171,13 +173,13 @@ const MainSectionComponent = () => {
            font-hev text-center"
             data-name="BestSeller"
           >
-            Best Sellers
+            Salads
           </p>
         </div>
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center"
           id="cat_menu"
-          data-name="TopRated"
+          data-name="Hamburgers"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
             setmisc((prev: MiscObject) => ({
@@ -188,22 +190,22 @@ const MainSectionComponent = () => {
         >
           <i
             className="text-2xl material-icons mr-2 -mt-1"
-            data-name="TopRated"
+            data-name="Hamburgers"
           >
             star_rate
           </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
-            data-name="TopRated"
+            data-name="Hamburgers"
           >
-            Top Rated
+            Hamburgers
           </p>
         </div>
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center "
           id="cat_menu"
-          data-name="Favourite"
+          data-name="Chickens"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
             setmisc((prev: MiscObject) => ({
@@ -214,19 +216,19 @@ const MainSectionComponent = () => {
         >
           <i
             className="text-2xl material-icons mr-2 -mt-1"
-            data-name="Favourite"
+            data-name="Chickens"
           >
             star_rate
           </i>
           <p
             className="text-xl font-semibold
            font-hev text-center"
-            data-name="Favourite"
+            data-name="Chickens"
           >
-            Favourite
+            Chickens
           </p>
         </div>
-        <div
+        {/* <div
           className="flex flex-row sm:items-center items-start p-3 cursor-pointer sm:shadow-none justify-center
            sm:roundedw-auto -none shadow rounded"
           id="cat_menu"
@@ -250,9 +252,9 @@ const MainSectionComponent = () => {
            font-hev sm:text-center text-left"
             data-name="Promotion"
           >
-            Promotions
+            Drinks
           </p>
-        </div>
+        </div> */}
       </div>
       <FoodCard />
     </div>
