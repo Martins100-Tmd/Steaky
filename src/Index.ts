@@ -119,8 +119,7 @@ export { default as BottomBar } from "./Components/MainUI/SideBar/BsideBar"; //=
 export { default as MainSection } from "./Components/MainUI/MainSection/MainSect"; //
 export { default as FoodCard } from "./Components/MainUI/MainSection/Food_Card"; //==
 //LeftBar Component                                                        ==========
-export { default as MainEndBar } from "./Components/MainUI/EndBar/sideBar"; //=======
 export { default as DesktopEndBar } from "./Components/MainUI/EndBar/DesktopBar"; //=
 //utils/func                                                                 ========
-export { default as CardToCart } from "./Components/MainUI/Cart/CardToCartDesktop"; //======
+export { default as CardToCart } from "./Components/MainUI/Cart/CardToCart"; //======
 //===================================================================================

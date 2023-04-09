@@ -5,7 +5,7 @@ const BSideBarComponent = () => {
   let { Cart } = useContext(CartContext);
   return (
     <div
-      className={`flex flex-row justify-between items-center w-full shadow-xl bg-white dark:bg-gray-200 py-5 px-3 duration-500
+      className={`flex flex-row justify-between items-center w-full shadow-xl bg-gray-200 py-5 px-3 duration-500
        h-full`}
     >
       <div className="sm:flex flex-col items-start w-10 mt-10 hidden">
@@ -24,8 +24,11 @@ const BSideBarComponent = () => {
           &#xf07a;
         </Link>
       </div>
-      <i className="flex justify-center my-3 text-3xl fa" title={"Eye Care"}>
-        &#xf0eb;
+      <i
+        className="flex justify-center my-3 text-3xl fa"
+        title={"notifications"}
+      >
+        &#xf0f3;
       </i>
       <i className="fa text-3xl">&#xf147;</i>
       <Link to={"/"} className="fa text-3xl">

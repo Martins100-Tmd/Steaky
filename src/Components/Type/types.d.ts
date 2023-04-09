@@ -31,6 +31,7 @@ export type CartContextType = {
     deliveryFee: number;
     total: number;
   };
+  setTrigger: Function;
 };
 //=================================================
 

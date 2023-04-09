@@ -8,7 +8,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham1",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -17,7 +17,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham2",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -26,7 +26,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham3",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -35,7 +35,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham4",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -44,7 +44,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham5",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -53,7 +53,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham6",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -62,7 +62,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham7",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -71,7 +71,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham8",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -80,7 +80,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham9",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -89,7 +89,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham10",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -98,7 +98,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham11",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -107,7 +107,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham12",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
   ],
@@ -118,7 +118,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza1",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -127,7 +127,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza2",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -136,7 +136,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza3",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -145,7 +145,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza4",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -154,7 +154,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza5",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -163,7 +163,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza6",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -172,7 +172,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza7",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -181,7 +181,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza8",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -190,7 +190,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza9",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -199,7 +199,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza10",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -208,7 +208,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza11",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
     {
@@ -217,7 +217,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F12,
       name: "Pizza12",
-      category: "string",
+      category: "Pizzas",
       id: "string",
     },
   ],
@@ -228,7 +228,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad1",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -237,7 +237,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad2",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -246,7 +246,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad3",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -255,7 +255,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad4",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -264,7 +264,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad5",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -273,7 +273,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad6",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -282,7 +282,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad7",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -291,7 +291,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad8",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -300,7 +300,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad9",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -309,7 +309,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad10",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -318,7 +318,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad11",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -327,7 +327,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad12",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
   ],
@@ -338,7 +338,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken1",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -347,7 +347,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken2",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -356,7 +356,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken3",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -365,7 +365,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken4",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -374,7 +374,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken5",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -383,7 +383,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken6",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -392,7 +392,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken7",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -401,7 +401,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken8",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -410,7 +410,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken9",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -419,7 +419,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken10",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -428,7 +428,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken11",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -437,7 +437,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken12",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
   ],
@@ -448,7 +448,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham1",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -457,7 +457,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham2",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -466,7 +466,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F4,
       name: "Ham3",
-      category: "string",
+      category: "Hamburgers",
       id: "string",
     },
     {
@@ -475,7 +475,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad10",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -484,7 +484,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad11",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -493,7 +493,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad12",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -502,7 +502,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken10",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -511,7 +511,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad1",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -520,7 +520,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad2",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -529,7 +529,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F11,
       name: "Salad3",
-      category: "string",
+      category: "Salads",
       id: "string",
     },
     {
@@ -538,7 +538,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken11",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
     {
@@ -547,7 +547,7 @@ const CardDB: ItemDB = {
       quantity: 1,
       image: F13,
       name: "Chicken12",
-      category: "string",
+      category: "Chickens",
       id: "string",
     },
   ],

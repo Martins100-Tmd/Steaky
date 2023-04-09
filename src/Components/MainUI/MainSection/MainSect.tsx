@@ -3,6 +3,7 @@ import { useContext } from "react";
 import CartContext from "../../../Context/cartContext";
 import { CartObjectType } from "../../Type/types";
 import ProductCategory from "../../../Context/productCategory";
+import { Link } from "react-router-dom";
 const MainSectionComponent = () => {
   let { Cart, setCart } = useContext(CartContext);
   let { state, ComputedCategory } = useContext(ProductCategory);
@@ -29,14 +30,16 @@ const MainSectionComponent = () => {
           <div className="w-3/4 h-[2px] bg-black dark:bg-gray-500 my-2 font-black"></div>
           <div className="w-1/2 h-[2px] bg-black dark:bg-gray-500 font-black"></div>
         </div>
-        <div className="flex flex-row items-center">
-          <p className="text-lg font-black self-end place-self-end font-hev">
-            {Cart.CartArray.length}
-          </p>
-          <i className="flex jusify-center text-4xl fa -mt-2 dark:text-gray-500">
-            &#xf07a;
-          </i>
-        </div>
+        <Link to={"/CARTDESKTOP"}>
+          <div className="flex flex-row items-center">
+            <p className="text-lg font-black self-end place-self-end font-hev">
+              {Cart.CartArray.length}
+            </p>
+            <i className="flex jusify-center text-4xl fa -mt-2 dark:text-gray-500">
+              &#xf07a;
+            </i>
+          </div>
+        </Link>
       </div>
       <div className="flex flex-row items-center justify-between w-full self-start bg-gray-200 p-3 rounded">
         <i

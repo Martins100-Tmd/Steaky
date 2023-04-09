@@ -3,7 +3,6 @@ import {
   DesktopEndBar,
   ErrorComponent,
   FaceUIComponent,
-  MainEndBar,
 } from "./Index";
 import { Route, Routes } from "react-router-dom";
 import JobComponent from "./Pages/Job";
@@ -35,11 +34,11 @@ const App = () => {
             element={<MainUIComponent />}
             errorElement={<ErrorComponent />}
           />
-          <Route
+          {/* <Route
             path="/CART"
             element={<MainEndBar />}
             errorElement={<ErrorComponent />}
-          />
+          /> */}
           <Route
             path="/CARTDESKTOP"
             element={<DesktopEndBar />}

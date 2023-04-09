@@ -2,23 +2,58 @@ import { useState } from "react";
 import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
 import { card_item, CartObjectType } from "../../Type/types";
-const CardToCardComponent = ({ image, name, category, price }: card_item) => {
+const CardToCardComponent = ({
+  image,
+  name,
+  category,
+  price,
+  id,
+  rate,
+}: card_item) => {
   let [count, setcount] = useState(1);
-  let { Cart, setCart, ComputedFees } = useContext(CartContext);
+  let { Cart, setCart, ComputedFees, setTrigger } = useContext(CartContext);
+  const rate_list = (mole: number) => {
+    let rateBox = [];
+    for (let i = 0; i < mole; i++) {
+      rateBox.push(
+        <i className="material-icons text-lg text-orange-400" key={i}>
+          &#xe838;
+        </i>
+      );
+    }
+    return rateBox;
+  };
   return (
     <div className="flex flex-row items-center w-full border-b border-gray-100 my-4 justify-between">
       <div className="flex flex-row items-center w-[40%]">
-        <img
-          src={image}
-          className={
-            "object-cover sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] mr-3"
-          }
-          alt={"product_image"}
-        />
-        <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col items-center">
+          <img
+            src={image}
+            className={
+              "object-cover sm:w-[80px] sm:h-[80px] w-[60px] h-[60px] mr-3"
+            }
+            alt={"product_image"}
+          />
           <p className="text-xl font-semibold font-hev">{name}</p>
+        </div>
+        <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-row items-center">{rate_list(rate)}</div>
           <small className="font-hev text-left">{category}</small>
-          <i className="fa text-red-400 text-xl text-left">&#xf00d;</i>
+          <i
+            className="fa text-black font-medium text-xl text-left"
+            onClick={() => {
+              let newCartArray = Cart.CartArray.filter((item) => {
+                return item.id !== id;
+              });
+              setCart((prev: CartObjectType) => ({
+                ...prev,
+                CartArray: newCartArray,
+              }));
+              setTrigger(name);
+            }}
+          >
+            &#xf014;
+          </i>
         </div>
       </div>
       <div className="flex flex-row items-center w-[30%]  mx-auto">

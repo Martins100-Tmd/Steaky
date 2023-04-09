@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactNode, useEffect } from "react";
 import {
   CartContextType,
   CartObjectType,
@@ -6,14 +6,23 @@ import {
 } from "../Components/Type/types";
 
 const CartContext = createContext<CartContextType>(undefined as any);
-
 export const CartContextProvider = ({ children }: { children: ReactNode }) => {
+  let [trigger, setTrigger] = useState("");
   let [Cart, setCart] = useState<CartObjectType>({
     CartArray: [],
     CartSideBar: 0,
     CartItemID: `${Math.floor(Math.random() * 3333334)}`,
     CartDuplicate: {},
   });
+  useEffect(() => {
+    let newCartDuplicate = { ...Cart.CartDuplicate };
+    delete newCartDuplicate[trigger];
+    setCart((prev: CartObjectType) => ({
+      ...prev,
+      CartDuplicate: newCartDuplicate,
+    }));
+    setTrigger("");
+  }, [trigger]);
   const ComputedFees = () => {
     let subtotal = 0,
       mul = 0,
@@ -31,7 +40,7 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
     };
   };
   return (
-    <CartContext.Provider value={{ Cart, setCart, ComputedFees }}>
+    <CartContext.Provider value={{ Cart, setCart, ComputedFees, setTrigger }}>
       {children}
     </CartContext.Provider>
   );

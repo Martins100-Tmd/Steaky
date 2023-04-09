@@ -1,6 +1,7 @@
 import { card_item, CartObjectType } from "../../Type/types";
 import { useContext } from "react";
 import CartContext from "../../../Context/cartContext";
+import { ColorScheme } from "../../../Misc/Mode";
 const CardComponent = ({
   price,
   name,
@@ -24,8 +25,8 @@ const CardComponent = ({
   };
   return (
     <div
-      className="flex flex-col items-center rounded-xl shadow p-4 bg-white dark:bg-gray-200 self-stretch relative
-       sm:min-h-[200px] bg-opacity-40 sm:w-auto w-full"
+      className={`flex flex-col items-center rounded-xl shadow p-4 bg-white dark:bg-gray-200 self-stretch relative
+       sm:min-h-[200px] bg-opacity-40 sm:w-auto w-full`}
     >
       <span
         className="fa text-3xl self-end place-self-end"
@@ -52,9 +53,7 @@ const CardComponent = ({
       </div>
       <button
         type={"button"}
-        className={
-          "block w-full rounded p-3 font-hev text-lg bg-gray-500 dark:bg-black text-white"
-        }
+        className={`block w-full rounded p-3 font-hev text-lg bg-gray-500 dark:bg-gray-100 text-white shadow`}
         onClick={() => {
           let AddCartArray = [...Cart.CartArray].concat([
             {
@@ -62,7 +61,7 @@ const CardComponent = ({
               price,
               image,
               name,
-              id,
+              id: `${Math.round(Math.random() * 76767)}`,
               category,
               quantity,
             },
