@@ -1,16 +1,33 @@
-import MiscContext from "../../../Context/Misc";
+import ProductCategory from "../../../Context/productCategory";
 import { useContext } from "react";
 import CardPageErrorComponent from "../../Error/ItemError";
+import { Card } from "../../../Index";
+import { ProductContextType } from "../../Type/types";
+
 const FoodCardComponent = () => {
-  let { misc } = useContext(MiscContext);
+  let { state } = useContext<ProductContextType>(ProductCategory);
+  console.log(state);
+  let mole = state[0].category ? state[0].category : "Product";
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:gap-5 gap-3 grid-cols-2 items-center w-full scroll-m-2">
-      {misc.favouriteCard(misc.currentCategory) ? (
-        misc.favouriteCard(misc.currentCategory).map((item, index) => {
-          return <div key={index}>{item}</div>;
+      {state ? (
+        state.map((item, index) => {
+          return (
+            <div key={index}>
+              <Card
+                price={item.price}
+                rate={item.rate}
+                quantity={item.quantity}
+                image={item.image}
+                id={item.id}
+                category={item.category}
+                name={item.name}
+              />
+            </div>
+          );
         })
       ) : (
-        <CardPageErrorComponent mole={misc.currentCategory} />
+        <CardPageErrorComponent mole={mole} />
       )}
     </div>
   );

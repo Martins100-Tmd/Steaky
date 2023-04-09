@@ -1,17 +1,16 @@
-import { card_item, CartObjectType } from "../../../Type/types";
-import Transform from "../../../Context/cartContext";
-import { useContext, useEffect } from "react";
-import { TransformCart } from "../../Index";
+import { card_item, CartObjectType } from "../../Type/types";
+import { useContext } from "react";
 import CartContext from "../../../Context/cartContext";
 const CardComponent = ({
   price,
-  description,
   name,
   rate,
+  id,
+  category,
+  quantity,
   image,
-  Switch,
 }: card_item) => {
-  let { Cart, setCart } = useContext(CartContext);
+  let { Cart, setCart, ComputedFees } = useContext(CartContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
@@ -43,13 +42,9 @@ const CardComponent = ({
         />
       </div>
       <div className="flex flex-col items-center w-full justify-between h-full self-end">
-        <p className="font-hev font-semibold text-center text-xl">
-          {description}
-        </p>
+        <p className="font-hev font-semibold text-center text-xl">{name}</p>
         <div className="flex flex-row items-center gap-2">
-          {rate_list(Math.round(parseInt(rate))).map((item) => {
-            return item;
-          })}
+          {rate_list(Math.round(rate))}
         </div>
         <small className="text-base text-black text-center font-hev font-semibold">
           ${price}
@@ -60,30 +55,33 @@ const CardComponent = ({
         className={
           "block w-full rounded p-3 font-hev text-lg bg-gray-500 dark:bg-black text-white"
         }
-        onClick={(e) => {
-          if (Switch) {
-            let AddCartArray = [...Cart.CartArray].concat([
-              {
-                index: Cart.CartItemID,
-                ignore: false,
-                Element: (
-                  <TransformCart
-                    name={name}
-                    Switch={0}
-                    id={Cart.CartItemID}
-                    image={image}
-                    price={price}
-                    description={description}
-                    rate={rate}
-                  />
-                ),
-              },
-            ]);
-            setCart((prev: CartObjectType) => ({
-              ...prev,
-              CartArray: AddCartArray,
-            }));
-          }
+        onClick={() => {
+          let AddCartArray = [...Cart.CartArray].concat([
+            {
+              rate,
+              price,
+              image,
+              name,
+              id,
+              category,
+              quantity,
+            },
+          ]);
+          setCart((prev: CartObjectType) => ({
+            ...prev,
+            CartArray: AddCartArray,
+          }));
+          let clone: any;
+          clone = Object.assign(Cart.CartDuplicate, {});
+          clone[name] = {
+            frequency: 1,
+            price,
+          };
+          setCart((prev: CartObjectType) => ({
+            ...prev,
+            CartDuplicate: clone,
+          }));
+          console.log(ComputedFees());
         }}
       >
         Add to Cart

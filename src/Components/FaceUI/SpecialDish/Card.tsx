@@ -1,4 +1,4 @@
-import { specialDishes_item } from "../../../Type/types";
+import { specialDishes_item } from "../../Type/types";
 const SpecialDishCardComponent = ({
   name,
   description,

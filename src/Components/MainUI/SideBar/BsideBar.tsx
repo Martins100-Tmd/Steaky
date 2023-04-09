@@ -17,7 +17,10 @@ const BSideBarComponent = () => {
         <p className="text-lg font-pop absolute bottom-4 left-4">
           {Cart.CartArray.length}
         </p>
-        <Link to={"/CART"} className="flex justify-center text-3xl fa relative">
+        <Link
+          to={"/CARTDESKTOP"}
+          className="flex justify-center text-3xl fa relative"
+        >
           &#xf07a;
         </Link>
       </div>

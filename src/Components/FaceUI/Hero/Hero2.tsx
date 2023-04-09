@@ -1,4 +1,4 @@
-import { F1, F14, F19, SpecialDishCard } from "../../Index";
+import { F1, F14, F19, SpecialDishCard } from "../../../Index";
 const SubHeroComponent = () => {
   return (
     <>

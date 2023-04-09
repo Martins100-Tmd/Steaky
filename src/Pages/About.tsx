@@ -1,5 +1,5 @@
 import "../Style/Global.css";
-import { AboutData, F8, Navbar } from "../Components/Index";
+import { AboutData, F8, Navbar } from "../Index";
 const AboutComponent = () => {
   return (
     <div className="flex flex-col items-center sm:w-ninety w-full mx-auto">

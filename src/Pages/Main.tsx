@@ -1,9 +1,4 @@
-import {
-  BottomBar,
-  MainEndBar,
-  MainSection,
-  MainSideBar,
-} from "../Components/Index";
+import { BottomBar, MainEndBar, MainSection, MainSideBar } from "../Index";
 import { useContext } from "react";
 import CartContext from "../Context/cartContext";
 const MainUIComponent = () => {
@@ -14,10 +9,10 @@ const MainUIComponent = () => {
         <div className={"sm:flex hidden w-[6%] h-full"}>
           <MainSideBar />
         </div>
-        <div className="lg:w-[70%] w-[95%] sm:px-5 sm:mx-0 mx-auto h-full overflow-y-scroll">
+        <div className="lg:w-[67%] w-[95%] sm:px-5 sm:mx-0 mx-auto h-full overflow-y-scroll">
           <MainSection />
         </div>
-        <div className="lg:flex hidden lg:w-[25%] self-stretch h-full ml-5">
+        <div className="lg:flex hidden lg:w-[28%] self-stretch h-full lg:ml-5 w-full">
           <MainEndBar />
         </div>
       </div>

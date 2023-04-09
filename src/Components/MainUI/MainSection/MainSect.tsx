@@ -1,11 +1,11 @@
-import { FoodCard } from "../../Index";
+import { FoodCard } from "../../../Index";
 import { useContext } from "react";
 import CartContext from "../../../Context/cartContext";
-import MiscContext from "../../../Context/Misc";
-import { MiscObject, CartObjectType } from "../../../Type/types";
+import { CartObjectType } from "../../Type/types";
+import ProductCategory from "../../../Context/productCategory";
 const MainSectionComponent = () => {
   let { Cart, setCart } = useContext(CartContext);
-  let { misc, setmisc } = useContext(MiscContext);
+  let { state, ComputedCategory } = useContext(ProductCategory);
   return (
     <div className="flex flex-col items-center w-full sm:mt-6 mt-3">
       <div className="sm:hidden flex flex-row items-center justify-between w-full py-4 sticky top-0 z-50">
@@ -69,10 +69,10 @@ const MainSectionComponent = () => {
         </div>
       </div>
 
-      <div className="w-full sm:h-[230px] sm:mt-5 mt-3 h-[200px] sm:flex hidden">
-        <div className="bg-gradient-to-r from-orange-600 to-green-400 w-full h-full rounded-lg z-50">
+      <div className="w-full sm:h-[230px] sm:mt-5 mt-3 h-[200px] sm:flex hidden relative">
+        <div className={"bg-black w-full h-full rounded-lg z-50"}>
           <div className="flex flex-col items-center h-full w-full place-content-center">
-            <h1 className="text-6xl text-black text-center font-bold font-hev">
+            <h1 className="text-6xl text-white text-center font-bold font-hev">
               30% off
             </h1>
             <p className="text-3xl text-left text-white mt-2 font-hev">
@@ -85,37 +85,39 @@ const MainSectionComponent = () => {
         className="grid sm:grid-cols-5 grid-cols-3 items-stretch w-full sm:mt-5 my-4 space-x-3 space-y-3"
         onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
           let target = e.target as HTMLDivElement;
+          if (target.dataset.name) {
+            ComputedCategory(target.dataset.name);
+          }
           let realTarget =
             target.id === "cat_menu" ? target : target.parentElement;
           let ParentRealTarget = realTarget?.parentElement;
           for (let i = 0; i < (ParentRealTarget?.children.length || 5); i++) {
             ParentRealTarget?.children[i].classList.remove(
               "border-b",
-              "border-green-600"
+              "border-black"
             );
             ParentRealTarget?.children[i].children[0].classList.remove(
-              "text-green-600"
+              "text-black"
             );
             ParentRealTarget?.children[i].children[1].classList.remove(
-              "text-green-600"
+              "text-black"
             );
           }
-          realTarget?.classList.add("border-b", "border-green-600");
-          realTarget?.children[0].classList.add("text-green-600");
-          realTarget?.children[1].classList.add("text-green-600");
+          realTarget?.classList.add("border-b", "border-black");
+          realTarget?.children[0].classList.add("text-black");
+          realTarget?.children[1].classList.add("text-black");
         }}
       >
         <div
           className="w-auto flex flex-row items-center p-2 cursor-pointer sm:shadow-none sm:rounded-none shadow rounded justify-center
-          border-b border-green-600"
+          border-b border-black"
           id="cat_menu"
           data-name="All"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
+            if (target.dataset.name) {
+              ComputedCategory(target.dataset.name);
+            }
           }}
         >
           <i className="text-2xl material-icons mr-2 -mt-1" data-name="All">
@@ -135,10 +137,9 @@ const MainSectionComponent = () => {
           data-name="Pizzas"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
+            if (target.dataset.name) {
+              ComputedCategory(target.dataset.name);
+            }
           }}
         >
           <i className="text-2xl material-icons mr-2 -mt-1" data-name="Pizzas">
@@ -159,10 +160,9 @@ const MainSectionComponent = () => {
           data-name="Salads"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
+            if (target.dataset.name) {
+              ComputedCategory(target.dataset.name);
+            }
           }}
         >
           <i className="text-2xl material-icons mr-2 -mt-1" data-name="Salads">
@@ -171,7 +171,7 @@ const MainSectionComponent = () => {
           <p
             className="text-xl font-semibold
            font-hev text-center"
-            data-name="BestSeller"
+            data-name="Salads"
           >
             Salads
           </p>
@@ -182,10 +182,9 @@ const MainSectionComponent = () => {
           data-name="Hamburgers"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
+            if (target.dataset.name) {
+              ComputedCategory(target.dataset.name);
+            }
           }}
         >
           <i
@@ -208,10 +207,9 @@ const MainSectionComponent = () => {
           data-name="Chickens"
           onClick={(e) => {
             let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
+            if (target.dataset.name) {
+              ComputedCategory(target.dataset.name);
+            }
           }}
         >
           <i
@@ -228,33 +226,6 @@ const MainSectionComponent = () => {
             Chickens
           </p>
         </div>
-        {/* <div
-          className="flex flex-row sm:items-center items-start p-3 cursor-pointer sm:shadow-none justify-center
-           sm:roundedw-auto -none shadow rounded"
-          id="cat_menu"
-          data-name="Promotion"
-          onClick={(e) => {
-            let target = e.target as HTMLDivElement;
-            setmisc((prev: MiscObject) => ({
-              ...prev,
-              currentCategory: target.dataset.name,
-            }));
-          }}
-        >
-          <i
-            className="text-2xl material-icons mr-2 -mt-1"
-            data-name="Promotion"
-          >
-            toll
-          </i>
-          <p
-            className="text-xl font-semibold
-           font-hev sm:text-center text-left"
-            data-name="Promotion"
-          >
-            Drinks
-          </p>
-        </div> */}
       </div>
       <FoodCard />
     </div>

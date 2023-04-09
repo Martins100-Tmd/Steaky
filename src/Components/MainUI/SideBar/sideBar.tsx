@@ -21,9 +21,20 @@ const SideBarComponent = () => {
           <p className="text-lg font-pop absolute bottom-6 right-1">
             {Cart.CartArray.length}
           </p>
-          <Link to={"/CART"} className="flex justify-center text-3xl fa">
-            &#xf07a;
-          </Link>
+          <div>
+            {/* <Link
+              to={"/CART"}
+              className="flexjustify-center text-3xl fa hidden"
+            >
+              &#xf07a;
+            </Link> */}
+            <Link
+              to={"/CARTDESKTOP"}
+              className="flex justify-center text-3xl fa"
+            >
+              &#xf07a;
+            </Link>
+          </div>
         </div>
         <i
           className="flex justify-center my-3 text-3xl fa cursor-pointer"

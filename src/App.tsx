@@ -1,17 +1,18 @@
 import {
   AboutComponent,
+  DesktopEndBar,
   ErrorComponent,
   FaceUIComponent,
   MainEndBar,
-} from "./Components/Index";
+} from "./Index";
 import { Route, Routes } from "react-router-dom";
 import JobComponent from "./Pages/Job";
 import MainUIComponent from "./Pages/Main";
 import { CartContextProvider } from "./Context/cartContext";
-import { MiscContextProvider } from "./Context/Misc";
+import { ProductCategoryContext } from "./Context/productCategory";
 const App = () => {
   return (
-    <MiscContextProvider>
+    <ProductCategoryContext>
       <CartContextProvider>
         <Routes>
           <Route
@@ -39,9 +40,14 @@ const App = () => {
             element={<MainEndBar />}
             errorElement={<ErrorComponent />}
           />
+          <Route
+            path="/CARTDESKTOP"
+            element={<DesktopEndBar />}
+            errorElement={<ErrorComponent />}
+          />
         </Routes>
       </CartContextProvider>
-    </MiscContextProvider>
+    </ProductCategoryContext>
   );
 };
 export default App;

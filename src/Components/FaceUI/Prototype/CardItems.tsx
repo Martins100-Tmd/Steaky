@@ -1,4 +1,4 @@
-import { F11, F12, F4, F13, CardII, F16 } from "../../Index";
+import { F11, F12, F4, F13, CardII, F16 } from "../../../Index";
 const ShoffComponent = () => {
   return (
     <>
@@ -11,20 +11,20 @@ const ShoffComponent = () => {
         gap-4 justify-items-stretch sm:gap-10"
         >
           <CardII
-            price="$23.00"
+            price="$2.30"
             image={F12}
             rate={"4.8"}
             description={"Mushroom and Potato pizza with Fontina cheese"}
           ></CardII>
 
           <CardII
-            price="$23.00"
+            price="$3.42"
             image={F16}
             rate={"4.7"}
             description={"Steak and cheese Sandwiches with beer-battered chips"}
           />
           <CardII
-            price="$23.00"
+            price="$4.34"
             image={F11}
             rate={"4.9"}
             description={
@@ -32,7 +32,7 @@ const ShoffComponent = () => {
             }
           />
           <CardII
-            price="$23.00"
+            price="$2.40"
             image={F4}
             rate={"4.6"}
             description={"Roasted beef and cabbage with corn & spicy pepperoni"}

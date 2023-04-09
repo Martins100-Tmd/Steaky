@@ -14,6 +14,10 @@ module.exports = {
         35: ["35%"],
         70: ["70%"],
       },
+      minWidth: {
+        120: ["120px"],
+        150: ["150px"],
+      },
       backgroundColor: {
         white_4: ["rgba(255,255,255,.6)"],
       },

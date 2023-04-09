@@ -3,7 +3,6 @@ import { useRouteError } from "react-router-dom";
 const ErrorComponent = () => {
   let Error: any = useRouteError();
   console.log(Error);
-
   return (
     <div
       className={`rounded p-5 shadow flex flex-col items-center sm:w-1/4 mx-auto w-ninety`}

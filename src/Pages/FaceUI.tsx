@@ -5,7 +5,7 @@ import {
   Hero2,
   ShoffComponent,
   NewsComponent,
-} from "../Components/Index";
+} from "../Index";
 const FaceUIComponent = () => {
   return (
     <div className="w-full">

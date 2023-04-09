@@ -1,4 +1,4 @@
-import { Hero1 } from "../../Index";
+import { Hero1 } from "../../../Index";
 import { Link } from "react-router-dom";
 const HeroComponent = () => {
   return (
@@ -11,11 +11,11 @@ const HeroComponent = () => {
           </h1>
           <p className="text-base sm:text-start text-center font-hev text-gray-600">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-            provident itaque ipsam veniam. Sapiente, odit...🙁
+            provident itaque ipsam veniam. Sapiente, odit...😋
           </p>
           <Link
             to={"/MENU"}
-            className="p-6 font-hev text-white rounded-xl bg-green-400 shadow-xl shadow-green-300/100 mt-3 sm:self-start self-center"
+            className="p-6 font-hev text-white rounded-xl bg-green-400 shadow-xl shadow-green-300/90 mt-3 sm:self-start self-center"
           >
             Get Started Now!
           </Link>

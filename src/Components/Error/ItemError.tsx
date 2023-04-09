@@ -1,8 +1,8 @@
-import { emptyBag } from "../Index";
+import { emptyBag } from "../../Index";
 
 const CardPageErrorComponent = ({ mole }: { mole: string }) => {
   return (
-    <div className="flex flex-col items-center justify-center sm:w-1/4 mx-auto w-[90%]">
+    <div className="flex flex-col items-center justify-center sm:w-1/4 mx-auto w-[90%] mt-10">
       <img
         src={emptyBag}
         alt="empty_Bag"

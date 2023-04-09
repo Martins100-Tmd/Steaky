@@ -1,4 +1,4 @@
-import { F18, F8, F20 } from "../../Components/Index";
+import { F18, F8, F20 } from "../../Index";
 let AboutData = [
   {
     title: "Our Food",

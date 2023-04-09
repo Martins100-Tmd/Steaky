@@ -1,4 +1,4 @@
-import { Ham1 } from "../../Index";
+import { Ham1 } from "../../../Index";
 import { Link } from "react-router-dom";
 const NavbarComponent = () => {
   return (

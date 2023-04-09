@@ -1,8 +1,4 @@
-import {
-  Testimonial1,
-  Testimonial2,
-  Testimonial3,
-} from "../../Components/Index";
+import { Testimonial1, Testimonial2, Testimonial3 } from "../../Index";
 export const User_Testimony = [
   {
     name: "Azie Melasari",

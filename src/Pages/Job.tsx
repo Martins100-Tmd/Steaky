@@ -1,5 +1,5 @@
-import { FooterComponent, Navbar } from "../Components/Index";
-import { Eng, Man, Mar } from "../utils/Data/Job";
+import { FooterComponent, Navbar } from "../Index";
+import { Eng, Man, Mar } from "../Index";
 const JobComponent = () => {
   return (
     <div className="flex flex-col items-center sm:w-ninety mx-auto w-full">
