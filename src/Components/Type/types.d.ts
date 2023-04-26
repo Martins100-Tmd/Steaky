@@ -48,11 +48,20 @@ export type ProductContextType = {
   ComputedCategory: (mole: string) => void;
 };
 
-// ====== ItemDB =======
-export type ItemDB = {
-  Chicken: card_item[];
-  All: card_item[];
-  Pizza: card_item[];
-  Salad: card_item[];
-  Hamburger: card_item[];
+export type colorSchemeMediaType = {
+  setModeState: Function;
+  light: {
+    bgI: string;
+    bgII: string;
+    bgIII: string;
+    textI: string;
+    textII: string;
+  };
+  dark: {
+    bgI: string;
+    bgII: string;
+    bgIII: string;
+    textI: string;
+    textII: string;
+  };
 };

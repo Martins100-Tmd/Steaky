@@ -1,6 +1,6 @@
 import {
   AboutComponent,
-  DesktopEndBar,
+  CartComponent,
   ErrorComponent,
   FaceUIComponent,
 } from "./Index";
@@ -34,14 +34,9 @@ const App = () => {
             element={<MainUIComponent />}
             errorElement={<ErrorComponent />}
           />
-          {/* <Route
-            path="/CART"
-            element={<MainEndBar />}
-            errorElement={<ErrorComponent />}
-          /> */}
           <Route
             path="/CARTDESKTOP"
-            element={<DesktopEndBar />}
+            element={<CartComponent />}
             errorElement={<ErrorComponent />}
           />
         </Routes>

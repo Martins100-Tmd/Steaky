@@ -2,8 +2,8 @@ import CartContext from "../../../Context/cartContext";
 import { useContext, useState } from "react";
 import { CardToCart, ItemErrorComponent } from "../../../Index";
 import { Link } from "react-router-dom";
-const DesktopEndBarComponent = () => {
-  let { Cart, setCart, ComputedFees } = useContext(CartContext);
+const CartComponent = () => {
+  let { Cart, ComputedFees } = useContext(CartContext);
   let [sus, setsus] = useState(0);
   return (
     <>
@@ -200,4 +200,4 @@ const DesktopEndBarComponent = () => {
   );
 };
 
-export default DesktopEndBarComponent;
+export default CartComponent;

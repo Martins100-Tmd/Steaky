@@ -12,7 +12,7 @@ export const ProductCategoryContext = ({
   const ComputedCategory = (mole: string) => {
     switch (mole) {
       case "All":
-        setstate(CardDB.All);
+        setstate(CardDB.Hamburger);
         return;
       case "Hamburgers":
         setstate(CardDB.Hamburger);
@@ -27,7 +27,7 @@ export const ProductCategoryContext = ({
         setstate(CardDB.Salad);
         return;
       default:
-        setstate(CardDB.All);
+        setstate(CardDB.Hamburger);
         return;
     }
   };

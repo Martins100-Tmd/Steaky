@@ -6,7 +6,7 @@ import ProductCategory from "../../../Context/productCategory";
 import { Link } from "react-router-dom";
 const MainSectionComponent = () => {
   let { Cart, setCart } = useContext(CartContext);
-  let { state, ComputedCategory } = useContext(ProductCategory);
+  let { ComputedCategory } = useContext(ProductCategory);
   return (
     <div className="flex flex-col items-center w-full sm:mt-6 mt-3">
       <div className="sm:hidden flex flex-row items-center justify-between w-full py-4 sticky top-0 z-50">

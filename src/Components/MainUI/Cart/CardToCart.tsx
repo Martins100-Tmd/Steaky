@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CartContext from "../../../Context/cartContext";
 import { useContext } from "react";
 import { card_item, CartObjectType } from "../../Type/types";
@@ -11,7 +11,7 @@ const CardToCardComponent = ({
   rate,
 }: card_item) => {
   let [count, setcount] = useState(1);
-  let { Cart, setCart, ComputedFees, setTrigger } = useContext(CartContext);
+  let { Cart, setCart, setTrigger } = useContext(CartContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
@@ -23,6 +23,11 @@ const CardToCardComponent = ({
     }
     return rateBox;
   };
+  useEffect(() => {
+    count === Cart.CartDuplicate[name].frequency
+      ? setcount(count)
+      : setcount(Cart.CartDuplicate[name].frequency);
+  }, [count]);
   return (
     <div className="flex flex-row items-center w-full border-b border-gray-100 my-4 justify-between">
       <div className="flex flex-row items-center w-[40%]">
@@ -76,7 +81,6 @@ const CardToCardComponent = ({
                   CartDuplicate: clone,
                 }));
               }
-              console.log(ComputedFees());
             }}
           >
             &#xf068;
@@ -114,8 +118,6 @@ const CardToCardComponent = ({
                   CartDuplicate: clone,
                 }));
               }
-              console.log(ComputedFees());
-              console.log(Cart.CartDuplicate[name]);
             }}
           >
             &#xf067;

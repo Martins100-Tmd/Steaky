@@ -1,7 +1,6 @@
 import { card_item, CartObjectType } from "../../Type/types";
 import { useContext } from "react";
 import CartContext from "../../../Context/cartContext";
-import { ColorScheme } from "../../../Misc/Mode";
 const CardComponent = ({
   price,
   name,
@@ -11,7 +10,7 @@ const CardComponent = ({
   quantity,
   image,
 }: card_item) => {
-  let { Cart, setCart, ComputedFees } = useContext(CartContext);
+  let { Cart, setCart } = useContext(CartContext);
   const rate_list = (mole: number) => {
     let rateBox = [];
     for (let i = 0; i < mole; i++) {
@@ -80,7 +79,6 @@ const CardComponent = ({
             ...prev,
             CartDuplicate: clone,
           }));
-          console.log(ComputedFees());
         }}
       >
         Add to Cart

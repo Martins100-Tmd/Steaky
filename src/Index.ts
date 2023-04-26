@@ -4,7 +4,7 @@ import Hero1 from "./Assets/Hero1.png";
 import F1 from "./Assets/F1.png";
 import F14 from "./Assets/F14.png";
 import F19 from "./Assets/F19.png";
-import HeroSect1 from "./Assets/SVG/HeroSect1.png";
+// import HeroSect1 from "./Assets/SVG/HeroSect1.png";
 import HeroSect2 from "./Assets/SVG/HeroSect2.png";
 import Testimonial1 from "./Assets/Testimonial1.jpg";
 import Testimonial2 from "./Assets/Testimonial2.jpg";
@@ -47,33 +47,33 @@ export {
   F1,
   F14,
   F19,
-  HeroSect1,
+  // HeroSect1,
   HeroSect2,
   Testimonial1,
   Testimonial3,
   Testimonial2,
 };
-export let Images = {
-  F21,
-  F8,
-  F18,
-  F20,
-  Ham1,
-  F13,
-  F12,
-  F11,
-  F4,
-  F16,
-  Hero1,
-  F1,
-  F14,
-  F19,
-  HeroSect1,
-  HeroSect2,
-  Testimonial1,
-  Testimonial3,
-  Testimonial2,
-};
+// export let Images = {
+//   F21,
+//   F8,
+//   F18,
+//   F20,
+//   Ham1,
+//   F13,
+//   F12,
+//   F11,
+//   F4,
+//   F16,
+
+//   F1,
+//   F14,
+//   F19,
+//   HeroSect1,
+//   HeroSect2,
+//   Testimonial1,
+//   Testimonial3,
+//   Testimonial2,
+// };
 //SpecialDishCard Component
 export { default as SpecialDishCard } from "./Components/FaceUI/SpecialDish/Card";
 
@@ -118,8 +118,10 @@ export { default as BottomBar } from "./Components/MainUI/SideBar/BsideBar"; //=
 //MainSection Component                                                    ==========
 export { default as MainSection } from "./Components/MainUI/MainSection/MainSect"; //
 export { default as FoodCard } from "./Components/MainUI/MainSection/Food_Card"; //==
-//LeftBar Component                                                        ==========
-export { default as DesktopEndBar } from "./Components/MainUI/EndBar/sideBar"; //=
+//Cart Component                                                        =============
+export { default as CartComponent } from "./Components/MainUI/Cart/Cart"; //=========
+//Left Display Component                                                =============
+export { default as DisplayComponent } from "./Components/MainUI/Aside/Display"; //====
 //utils/func                                                                 ========
 export { default as CardToCart } from "./Components/MainUI/Cart/CardToCart"; //======
 //===================================================================================
