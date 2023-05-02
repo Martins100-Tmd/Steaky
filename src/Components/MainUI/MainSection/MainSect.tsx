@@ -35,9 +35,7 @@ const MainSectionComponent = () => {
             <p className="text-lg font-black self-end place-self-end font-hev">
               {Cart.CartArray.length}
             </p>
-            <i className="flex jusify-center text-4xl fa -mt-2 dark:text-gray-500">
-              &#xf07a;
-            </i>
+            <i className="flex jusify-center text-4xl fa -mt-2 dark:text-gray-500">&#xf07a;</i>
           </div>
         </Link>
       </div>
@@ -75,12 +73,8 @@ const MainSectionComponent = () => {
       <div className="w-full sm:h-[230px] sm:mt-5 mt-3 h-[200px] sm:flex hidden relative">
         <div className={"bg-black w-full h-full rounded-lg z-50"}>
           <div className="flex flex-col items-center h-full w-full place-content-center">
-            <h1 className="text-6xl text-white text-center font-bold font-hev">
-              30% off
-            </h1>
-            <p className="text-3xl text-left text-white mt-2 font-hev">
-              Fitness Meal
-            </p>
+            <h1 className="text-6xl text-white text-center font-bold font-hev">30% off</h1>
+            <p className="text-3xl text-left text-white mt-2 font-hev">Fitness Meal</p>
           </div>
         </div>
       </div>
@@ -91,20 +85,12 @@ const MainSectionComponent = () => {
           if (target.dataset.name) {
             ComputedCategory(target.dataset.name);
           }
-          let realTarget =
-            target.id === "cat_menu" ? target : target.parentElement;
+          let realTarget = target.id === "cat_menu" ? target : target.parentElement;
           let ParentRealTarget = realTarget?.parentElement;
           for (let i = 0; i < (ParentRealTarget?.children.length || 5); i++) {
-            ParentRealTarget?.children[i].classList.remove(
-              "border-b",
-              "border-black"
-            );
-            ParentRealTarget?.children[i].children[0].classList.remove(
-              "text-black"
-            );
-            ParentRealTarget?.children[i].children[1].classList.remove(
-              "text-black"
-            );
+            ParentRealTarget?.children[i].classList.remove("border-b", "border-black");
+            ParentRealTarget?.children[i].children[0].classList.remove("text-black");
+            ParentRealTarget?.children[i].children[1].classList.remove("text-black");
           }
           realTarget?.classList.add("border-b", "border-black");
           realTarget?.children[0].classList.add("text-black");
@@ -190,10 +176,7 @@ const MainSectionComponent = () => {
             }
           }}
         >
-          <i
-            className="text-2xl material-icons mr-2 -mt-1"
-            data-name="Hamburgers"
-          >
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="Hamburgers">
             star_rate
           </i>
           <p
@@ -215,10 +198,7 @@ const MainSectionComponent = () => {
             }
           }}
         >
-          <i
-            className="text-2xl material-icons mr-2 -mt-1"
-            data-name="Chickens"
-          >
+          <i className="text-2xl material-icons mr-2 -mt-1" data-name="Chickens">
             star_rate
           </i>
           <p
